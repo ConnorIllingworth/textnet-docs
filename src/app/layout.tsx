@@ -4,38 +4,43 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Image from 'next/image'
 import Logo from '@/components/logo'
+import { Metadata } from 'next'
+import Link from 'next/link'
  
-export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
-}
+export const metadata: Metadata = {
+  title: "TextRetriever Docs",
+  description: "Documentation for TextRetriever",
+};
  
 const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
 const navbar = (
   <Navbar
     logo={<Logo/>}
+    projectLink={process.env.APP_URL}
   />
+  // <>
+  //   <Link href={process.env.APP_URL ?? ''}>Back To App</Link>
+  //   <Navbar
+  //     logo={<Logo/>}
+  //     projectLink={process.env.APP_URL}
+  //   />
+  // </>
 )
 const footer = <Footer>{new Date().getFullYear()} TextRetriever.</Footer>
  
 export default async function RootLayout({ children }) {
   return (
     <html
-      // Not required, but good for SEO
       lang="en"
-      // Required to be set
       dir="ltr"
-      // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
       suppressHydrationWarning
     >
-      <Head
-      // ... Your additional head options
-      >
-        {/* Your additional tags should be passed as `children` of `<Head>` element */}
+      <Head>
+
       </Head>
       <body>
+        <Link href={process.env.APP_URL ?? ''}>Back To App</Link>
         <Layout
-          // banner={banner}
           navbar={navbar}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
