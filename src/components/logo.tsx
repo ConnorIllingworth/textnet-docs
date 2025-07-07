@@ -2,10 +2,7 @@
 'use client'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState, useEffect } from 'react'
-// const url = process.env.APP_URL;
-// const url = process.env.NEXT_PUBLIC_APP_URL;
 
 export default function Logo() {
   const { resolvedTheme } = useTheme()

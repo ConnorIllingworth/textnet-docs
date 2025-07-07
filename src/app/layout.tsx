@@ -1,8 +1,7 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
-import Image from 'next/image'
 import Logo from '@/components/logo'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -12,23 +11,18 @@ export const metadata: Metadata = {
   description: "Documentation for TextRetriever",
 };
  
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
+// const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
 const navbar = (
   <Navbar
     logo={<Logo/>}
     projectLink={process.env.APP_URL}
   />
-  // <>
-  //   <Link href={process.env.APP_URL ?? ''}>Back To App</Link>
-  //   <Navbar
-  //     logo={<Logo/>}
-  //     projectLink={process.env.APP_URL}
-  //   />
-  // </>
 )
 const footer = <Footer>{new Date().getFullYear()} TextRetriever.</Footer>
  
-export default async function RootLayout({ children }) {
+import { ReactNode } from 'react';
+
+export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
