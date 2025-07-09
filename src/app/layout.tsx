@@ -5,6 +5,7 @@ import 'nextra-theme-docs/style.css'
 import Logo from '@/components/logo'
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { Analytics } from '@vercel/analytics/next'
  
 export const metadata: Metadata = {
   title: "TextRetriever Docs",
@@ -43,6 +44,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
           // ... Your additional layout options
         >
           {children}
+          <Analytics/>
         </Layout>
       </body>
     </html>
