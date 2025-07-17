@@ -34,7 +34,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
 
       </Head>
       <body>
-        <Link href={process.env.APP_URL ?? ''}>Back To App</Link>
+        {/* <Link href={process.env.APP_URL ?? ''}>Back To App</Link> */}
         <Layout
           navbar={navbar}
           pageMap={await getPageMap()}

@@ -18,7 +18,7 @@ Five steps to automate with n8n—no server required.
 
 4. **CONFIGURE NODE**  
    ```text
-   • URL: 
+   • URL: https://service.textretriever.com/api/<service>
    • Method: POST
    • Authentication: Header → Authorization: Bearer <YOUR_TOKEN>
    • Body Content Type: multipart/form-data
