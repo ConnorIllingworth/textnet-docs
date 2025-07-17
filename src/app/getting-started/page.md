@@ -17,9 +17,10 @@ Five simple steps and you’ll be parsing docs in no time
    Enter payment details, pick a plan, and save. Subscription starts instantly.
 
 4. **GENERATE API KEY**  
-   Go to API Keys and click “GENERATE.” Your token appears—no email, no captcha.
+   Go to API Keys and click “GENERATE.” Make note of this, it will never be revealed again.
 
 5. **MAKE REQUESTS**  
    Add this header to every call:  
    `Authorization: Bearer <YOUR_TOKEN>`  
-   and you’re live.  
+   and you’re live.
+
