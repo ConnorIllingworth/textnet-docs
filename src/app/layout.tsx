@@ -4,7 +4,7 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Logo from '@/components/logo'
 import { Metadata } from 'next'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/next'
  
 export const metadata: Metadata = {
