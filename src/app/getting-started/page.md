@@ -5,22 +5,19 @@ description: How to get started with TextRetriever
 
 # Get started with TextRetriever
 
-Five simple steps and you’ll be parsing docs in no time
+Four simple steps and you’ll be parsing docs in no time
 
 1. **LOGIN**  
-   Click “SIGN IN” and choose a provider.
+   Click LOG IN” and choose a provider.
 
-2. **CREATE CUSTOMER**  
-   Fill out the customer form with your billing email and address. Hit “SUBMIT.”
+2. **GO TO BILLING**  
+   Choose a Plan that works best for you. Or stick with free for now.
 
-3. **SET UP BILLING**  
-   Enter payment details, pick a plan, and save. Subscription starts instantly.
+3. **GENERATE API KEY**  
+   Go to API Keys and click GENERATE NEW KEY.” Make note of this, it will never be revealed again.
 
-4. **GENERATE API KEY**  
-   Go to API Keys and click “GENERATE.” Make note of this, it will never be revealed again.
-
-5. **MAKE REQUESTS**  
+4. **MAKE REQUESTS**  
    Add this header to every call:  
-   `Authorization: Bearer <YOUR_TOKEN>`  
+   `Authorization: Bearer <API_KEY>`  
    and you’re live.
 
